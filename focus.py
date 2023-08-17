@@ -5,7 +5,7 @@ import re
 class WindowMgr:
     """Encapsulates some calls to the winapi for window management"""
 
-    def __init__ (self):
+    def __init__(self):
         """Constructor"""
         self._handle = None
 
@@ -26,6 +26,7 @@ class WindowMgr:
     def set_foreground(self):
         """put the window in the foreground"""
         win32gui.SetForegroundWindow(self._handle)
+
 
 """
 w = WindowMgr()
